@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="mainwindow">
+    <property name="cursor">arrow</property>
+    <property name="height">800</property>
+    <property name="padding">20</property>
+    <property name="width">800</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <property name="sticky">nesw</property>
+    </layout>
+    <child>
+      <object class="tk.LabelFrame" id="LabelFrame_1">
+        <property name="cursor">arrow</property>
+        <property name="height">800</property>
+        <property name="relief">groove</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">Kalkulasi Kecepatan</property>
+        <property name="width">800</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">10</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="rowspan">10</property>
+          <rows>
+            <row id="0">
+              <property name="pad">10</property>
+            </row>
+            <row id="1">
+              <property name="pad">10</property>
+            </row>
+          </rows>
+        </layout>
+        <child>
+          <object class="tk.Label" id="speed_text">
+            <property name="anchor">w</property>
+            <property name="cursor">arrow</property>
+            <property name="font">{Verdana} 20 {}</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">KECEPATAN</property>
+            <property name="width">20</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="speed_value">
+            <property name="anchor">w</property>
+            <property name="font">{Verdana} 20 {}</property>
+            <property name="relief">sunken</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="width">20</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_4">
+            <property name="compound">right</property>
+            <property name="cursor">arrow</property>
+            <property name="font">{Verdana} 10 {}</property>
+            <property name="justify">left</property>
+            <property name="relief">groove</property>
+            <property name="text" translatable="yes">KAMERA</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Canvas" id="picture_box">
+            <property name="background">#000000</property>
+            <property name="borderwidth">1</property>
+            <property name="relief">ridge</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="btn_start">
+            <property name="command">start_sensor</property>
+            <property name="text" translatable="yes">START</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
